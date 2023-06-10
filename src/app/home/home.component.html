@@ -1,0 +1,706 @@
+<body>
+    <div id="sidebar" class="sidebar">
+        <p><img src='assets/archivos/telconet.jpg' alt=”profile_picture”></p>
+        <div [hidden]="!directorio">
+            <ul class="menu">
+                <li><span name="list" id="nivel1-1"><label for="nivel1-1" class="contenedor">DIRECTORIO</label>
+                        <ul class="interior">
+                            <li><span name="list" id="nivel2-1"><label for="nivel2-1"
+                                        class="contenedor">TELCONET</label>
+                                    <ul class="interior">
+                                        <li><a href="javascript: void(0);"
+                                                (click)="cargarHtml('dir_gerencias.html')">GERENCIAS</a></li>
+                                        <li><span name="list" id="nivel3-2"><label for="nivel3-2"
+                                                    class="contenedor">COORDINADOR
+                                                    ELECTRICO</label>
+                                                <ul class="interior">
+                                                    <li><a href="javascript: void(0);"
+                                                            (click)="cargarHtml('coordinador_electrico_r1.html')">R1</a>
+                                                    </li>
+                                                    <li><a href="javascript: void(0);"
+                                                            (click)="cargarHtml('coordinador_electrico_r2.html')">R2</a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-3"><label for="nivel3-3"
+                                                    class="contenedor">OPERATIVOS</label>
+                                                <ul class="interior">
+                                                    <li><a href="javascript: void(0);"
+                                                            (click)="cargarHtml('operativos_gye.html')">GYE</a></li>
+                                                    <li><a href="javascript: void(0);"
+                                                            (click)="cargarHtml('operativos_uio.html')">UIO</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-4"><label for="nivel3-4"
+                                                    class="contenedor">ELECTRICOS</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">GYE</a></li>
+                                                    <li><a href="#r">UIO</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-5"><label for="nivel3-5"
+                                                    class="contenedor">TECNICA
+                                                    SUCURSAL</label>
+                                                <ul class="interior">
+                                                    <li><span name="list" id="nivel4-7"><label for="nivel4-7"
+                                                                class="contenedor">EXR1</label>
+                                                            <ul class="interior">
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_manta.html')">MANTA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_loja.html')">LOJA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_cuenca.html')">CUENCA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_galapagos.html')">GALAPAGOS</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_machala.html')">MACHALA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_quevedo.html')">QUEVEDO</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_milagro.html')">MILAGRO</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_salinas.html')">SALINAS</a>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-8"><label for="nivel4-8"
+                                                                class="contenedor">EXR2</label>
+                                                            <ul class="interior">
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_ibarra.html')">IBARRA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_riobamba.html')">RIOBAMBA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_ambato.html')">AMBATO</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_coca.html')">COCA</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_orellana.html')">ORELLANA(LAGOAGRIO)</a>
+                                                                </li>
+                                                                <li><a href="javascript: void(0);"
+                                                                        (click)="cargarHtml('tecnica_sucursal_santodomingo.html')">SANTO
+                                                                        DOMINGO</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="javascript: void(0);"
+                                                (click)="cargarHtml('plantilla.html')">OTN</a>
+                                        </li>
+                                        <li><a href="javascript: void(0);"
+                                                (click)="cargarHtml('directorio_networking.html')">NETWORKING</a></li>
+                                        <li><a href="#r">IPCCL2</a></li>
+                                        <li><a href="#r">HELPDESK</a></li>
+                                        <li><a href="#r">SISTEMAS</a></li>
+                                        <li><a href="#r">CERT</a></li>
+                                        <li><span name="list" id="nivel3-12"><label for="nivel3-12"
+                                                    class="contenedor">IT</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">GYE</a></li>
+                                                    <li><a href="#r">UIO</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-13"><label for="nivel3-13"
+                                                    class="contenedor">DATACENTER BOC</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">GYE</a></li>
+                                                    <li><a href="#r">UIO</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">TELEPUERTO GUAYAQUIL</a></li>
+                                        <li><a href="#r">GOSSEAL</a></li>
+                                        <li><span name="list" id="nivel3-16"><label for="nivel3-16"
+                                                    class="contenedor">RADIO
+                                                    ENLACE</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">GYE</a></li>
+                                                    <li><a href="#r">UIO</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">GARITA CTO GYE</a></li>
+                                        <li><a href="#r">COMERCIAL</a></li>
+                                        <li><a href="#r">GRUPOS DE WHATSAPP INTERNOS</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><span name="list" id="nivel2-2"><label for="nivel2-2" class="contenedor">EXTERNOS
+                                        NOC</label>
+                                    <ul class="interior">
+                                        <li><span name="list" id="nivel3-20"><label for="nivel3-20"
+                                                    class="contenedor">SALIDAS
+                                                    INTERNACIONALES</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">CABLE & WIRELESS</a></li>
+                                                    <li><a href="#r">UFINET</a></li>
+                                                    <li><span name="list" id="nivel4-17"><label for="nivel4-17"
+                                                                class="contenedor">CIRION</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">DATACENTER DE UIO</a></li>
+                                                                <li><a href="#r">CIRCUITOS CON ID</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">PCCW</a></li>
+                                                    <li><span name="list" id="nivel4-19"><label for="nivel4-19"
+                                                                class="contenedor">TELXIUS</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">PCCS</a></li>
+                                                                <li><a href="#r">SAM1</a></li>
+                                                                <li><a href="#r">TIWS</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">NETFLIX</a></li>
+                                                    <li><span name="list" id="nivel4-21"><label for="nivel4-21"
+                                                                class="contenedor">GOOGLE</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">PEERING </a></li>
+                                                                <li><a href="#r">GGC </a></li>
+
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">AMAZON</a></li>
+                                                    <li><a href="#r">FACEBOOK </a></li>
+                                                    <li><a href="#r">RIOT</a></li>
+                                                    <li><a href="#r">EQUINIX</a></li>
+                                                    <li><a href="#r">TSPARKLE</a></li>
+                                                    <li><a href="#r">TELIASONERA</a></li>
+                                                    <li><a href="#r">CABLE SUBMARINO PAN</a></li>
+                                                    <li><a href="#r">NTT</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-21"><label for="nivel3-21"
+                                                    class="contenedor">CLIENTES
+                                                    ESPECIALES</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">CLARO</a></li>
+                                                    <li><span name="list" id="nivel4-31"><label for="nivel4-31"
+                                                                class="contenedor">TELEFONICA</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">SOPORTE DE FIBRA</a></li>
+                                                                <li><a href="#r">SOPORTE DE DATOS Y CC</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">TVCABLE</a></li>
+                                                    <li><a href="#r">NEDETEL</a></li>
+                                                    <li><a href="#r">CEDIA</a></li>
+
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">EDIFICIOS Y CC (NO TELEFONICA)</a></li>
+                                        <li><span name="list" id="nivel3-23"><label for="nivel3-23"
+                                                    class="contenedor">PROACTIVOS CON
+                                                    SOLICITUD DE LLAMADA OBLIGATORIA</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">PACIFICO</a></li>
+                                                    <li><a href="#r">INTERAGUA</a></li>
+                                                    <li><a href="#r">SWEET&COFFE</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">GRUPOS DE WHATSAPP CLIENTES</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><span name="list" id="nivel2-3"><label for="nivel2-3" class="contenedor">EXTERNOS
+                                        MIMG</label>
+                                    <ul class="interior">
+                                        <li><a href="#r">ESCUELAS MIMG</a></li>
+                                        <li><a href="#r">ECOTEC</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </span>
+                </li> <!-- NIVEL 5 -->
+            </ul>
+        </div>
+
+        <div [hidden]="!mimg">
+            <ul class="menu">
+                <li><span name="list" id="nivel1-2"><label for="nivel1-2" class="contenedor">NOC MIMG</label>
+                        <ul class="interior">
+                            <li><span name="list" id="nivel2-4"><label for="nivel2-4" class="contenedor">MONITOREO
+                                        WIFIS</label>
+                                    <ul class="interior">
+                                        <li><a href="#r">CASO POR CAÍDA</a></li>
+                                        <li><a href="#r">CASO MASIVO</a></li>
+                                        <li><a href="#r">TAREA PROBLEMAS ELECTRICOS</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><a href="#r">CLIENTE ECOTEC</a></li>
+                            <li><a href="#r">CONTROLADORAS</a></li>
+                        </ul>
+                    </span>
+                </li> <!-- NIVEL 3 -->
+            </ul>
+        </div>
+        <div [hidden]="!noc">
+            <ul>
+                <li><span name="list" id="nivel1-3"><label for="nivel1-3" class="contenedor">NOC</label>
+                        <ul class="interior">
+                            <li><span name="list" id="nivel2-7"><label for="nivel2-7"
+                                        class="contenedor">PERMISOS</label>
+                                    <ul class="interior">
+                                        <li><a href="#r">FORMULARIOS DE PERMISOS</a></li>
+                                        <li><a href="#r">CORREOS PARA SOLICITUD DE PERMISOS</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><span name="list" id="nivel2-8"><label for="nivel2-8"
+                                        class="contenedor">ESCALAMIENTO</label>
+                                    <ul class="interior">
+                                        <li><a href="#r">EXTERNO</a></li>
+                                        <li><a href="#r">INTERNO</a></li>
+
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><a href="#r">INFORMACIÓN ADICIONAL</a></li>
+                            <li><span name="list" id="nivel2-10"><label for="nivel2-10"
+                                        class="contenedor">PROACTIVO</label>
+                                    <ul class="interior">
+                                        <li><span name="list" id="nivel3-34"><label for="nivel3-34"
+                                                    class="contenedor">GENERADAS
+                                                    DESDE EL ZABBIX</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">TAREAS</a></li>
+                                                    <li><a href="#r">CASOS</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-35"><label for="nivel3-35"
+                                                    class="contenedor">CAMARAS</label>
+                                                <ul class="interior">
+                                                    <li><span name="list" id="nivel4-40"><label for="nivel4-40"
+                                                                class="contenedor">TAREA</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">INTELIGENCIA ARTIFICIAL</a></li>
+                                                                <li><a href="#r">TEMPERATURA</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-41"><label for="nivel4-41"
+                                                                class="contenedor">CASOS</label>
+                                                            <ul class="interior">
+                                                                <li><span name="list" id="nivel5-26"><label
+                                                                            for="nivel5-26"
+                                                                            class="contenedor">CAMARA</label>
+                                                                        <ul class="interior">
+                                                                            <li><a href="#r">ELECTRICO</a></li>
+                                                                            <li><a href="#r">FALLA DE MONITOREO</a></li>
+                                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                                <li><span name="list" id="nivel5-27"><label
+                                                                            for="nivel5-27"
+                                                                            class="contenedor">ONT</label>
+                                                                        <ul class="interior">
+                                                                            <li><a href="#r">ELECTRICO</a></li>
+                                                                            <li><a href="#r">OPU</a></li>
+                                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                                <li><span name="list" id="nivel5-28"><label
+                                                                            for="nivel5-28"
+                                                                            class="contenedor">BACKBONE</label>
+                                                                        <ul class="interior">
+                                                                            <li><a href="#r">ELECTRICO</a></li>
+                                                                            <li><a href="#r">OPU</a></li>
+                                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">ALARMAS POCO FRECUENTES</a></li>
+
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-36"><label for="nivel3-36"
+                                                    class="contenedor">WIFI</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">PROACTIVO MANUAL</a></li>
+                                                    <li><a href="#r">NODO WIFI </a></li>
+                                                    <li><a href="#r">PROACTIVO MANUAL</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-37"><label for="nivel3-37"
+                                                    class="contenedor">MASIVO</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">CORTE DE RUTA</a></li>
+                                                    <li><a href="#r">NODO WIFI </a></li>
+                                                    <li><a href="#r">PROACTIVO MANUAL</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">PANAMA</a></li>
+                                        <li><a href="#r">GUATEMALA</a></li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><span name="list" id="nivel2-11"><label for="nivel2-11"
+                                        class="contenedor">TELEFONICA/CEDIA</label>
+                                    <ul class="interior">
+                                        <li><span name="list" id="nivel3-40"><label for="nivel3-40"
+                                                    class="contenedor">PERFORMANCE</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">GUAYAQUIL</a></li>
+                                                    <li><a href="#r">QUITO</a></li>
+                                                    <li><a href="#r">SWITCHES OPTICOS</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-41"><label for="nivel3-41"
+                                                    class="contenedor">TELEFONICA</label>
+                                                <ul class="interior">
+                                                    <li><span name="list" id="nivel4-52"><label for="nivel4-52"
+                                                                class="contenedor">PERMISOS</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">EMERGENTES</a></li>
+                                                                <li><a href="#r">PROGRAMADOS</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">CASOS</a></li>
+                                                    <li><a href="#r">VENTANAS DE MANTENIMIENTO</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-42"><label for="nivel3-42"
+                                                    class="contenedor">CEDIA</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">INSTALACION DEL SAM</a></li>
+                                                    <li><a href="#r">REVISION DE EQUIPOS</a></li>
+                                                    <li><span name="list" id="nivel4-57"><label for="nivel4-57"
+                                                                class="contenedor">CASOS</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">CLIENTE</a></li>
+                                                                <li><a href="#r">OTN</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-43"><label for="nivel3-43"
+                                                    class="contenedor">TAREAS</label>
+                                                <ul class="interior">
+                                                    <li><span name="list" id="nivel4-58"><label for="nivel4-58"
+                                                                class="contenedor">TELCOGRAPH</label>
+                                                            <ul class="interior">
+                                                                <li><span name="list" id="nivel5-33"><label
+                                                                            for="nivel5-33" class="contenedor">INGRESO
+                                                                            DE
+                                                                            CLIENTES</label>
+                                                                        <ul class="interior">
+                                                                            <li><a href="#r">INGRESO ISP</a></li>
+                                                                            <li><a href="#r">INGRESO CLIENTES
+                                                                                    REGULARES</a>
+                                                                            </li>
+                                                                            <li><a href="#r">INGRESO CLIENTES
+                                                                                    GUATEMALA</a>
+                                                                            </li>
+                                                                            <li><span name="list" id="nivel6-7"><label
+                                                                                        for="nivel6-7"
+                                                                                        class="contenedor">INGRESO
+                                                                                        DE
+                                                                                        WIFIS</label>
+                                                                                    <ul class="interior">
+                                                                                        <li><a href="#r">CON DASHBOARD
+                                                                                                CREADO</a></li>
+                                                                                        <li><a href="#r">SIN DASHBOARD
+                                                                                                CREADO</a></li>
+                                                                                    </ul>
+                                                                                </span>
+                                                                            </li>
+                                                                            <li><a href="#r">ACTUALIZAR CLIENTES</a>
+                                                                            </li>
+                                                                            <li><a href="#r">CANCELAR CLIENTES</a></li>
+                                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                                <li><span name="list" id="nivel5-34"><label
+                                                                            for="nivel5-35"
+                                                                            class="contenedor">VISUALIZACION DE
+                                                                            GRAFICAS</label>
+                                                                        <ul class="interior">
+                                                                            <li><a href="#r">SIN SNMP</a></li>
+                                                                            <li><a href="#r">SERVIDOR CAÍDO</a></li>
+                                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                                <li><span name="list" id="nivel5-35"><label
+                                                                            for="nivel5-35" class="contenedor">RAZONES
+                                                                            SOCIALES</label>
+                                                                        <ul class="interior">
+                                                                            <li><a href="#r">UNIFICACION DE RAZONES
+                                                                                    SOCIALES</a>
+                                                                            </li>
+                                                                            <li><a href="#r">CAMBIO DE RAZON SOCIAL</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li><span name="list" id="nivel2-12"><label for="nivel2-12"
+                                        class="contenedor">BACKBONE</label>
+                                    <ul class="interior">
+                                        <li><span name="list" id="nivel3-44"><label for="nivel3-44"
+                                                    class="contenedor">REPORTES</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">CORREO GRAFANA</a></li>
+                                                    <li><a href="#r">ASR</a></li>
+                                                    <li><a href="#r">BACKBONE</a></li>
+                                                    <li><a href="#r">HILLSTONE</a></li>
+                                                    <li><a href="#r">SALIDAS INTERNACIONALES</a></li>
+                                                    <li><a href="#r">DIAGRAMAS</a></li>
+                                                    <li><a href="#r">LOW TRAFFIC</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-45"><label for="nivel3-45"
+                                                    class="contenedor">PACKETLIGHT</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">ALARMAS PRIORITARIAS</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-46"><label for="nivel3-46"
+                                                    class="contenedor">FIBERHOME</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">ALARMAS PRIORITARIAS</a></li>
+                                                    <li><a href="#r">ALARMAS DE REPORTE DIRECTO A LA TECNICA</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-47"><label for="nivel3-47"
+                                                    class="contenedor">PRUEBAS
+                                                    DE L3</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">UIO</a></li>
+                                                    <li><a href="#r">GYE</a></li>
+                                                    <li><a href="#r">PROVINCIAS</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-48"><label for="nivel3-48"
+                                                    class="contenedor">TAREAS
+                                                    PROGRAMADAS</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">SISRED</a></li>
+                                                    <li><a href="#r">NOCapps</a></li>
+                                                    <li><a href="#r">Qlinksense</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">KENTINCK</a></li>
+                                        <li><span name="list" id="nivel3-50"><label for="nivel3-50"
+                                                    class="contenedor">ARBOR</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">REPORTES DE ALARMAS</a></li>
+                                                    <li><a href="#r">ALARMAS COMUNES</a></li>
+                                                    <li><a href="#r">ENVIAR IPS BLACKHOLD</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-51"><label for="nivel3-51"
+                                                    class="contenedor">SYSLOG</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">REPORTE</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><a href="#r">DASHBOARD UPS</a></li>
+                                        <li><span name="list" id="nivel3-53"><label for="nivel3-53"
+                                                    class="contenedor">DASHBOARD
+                                                    SERVICIOS</label>
+                                                <ul class="interior">
+                                                    <li><a href="#r">REPORTE DNS</a></li>
+                                                    <li><a href="#r">REPORTE NW</a></li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                        <li><span name="list" id="nivel3-54"><label for="nivel3-54"
+                                                    class="contenedor">DASHBOARD
+                                                    BACKBONE</label>
+                                                <ul class="interior">
+                                                    <li><span name="list" id="nivel4-53"><label for="nivel3-53"
+                                                                class="contenedor">EQUIPO
+                                                                EDGE</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Problema Electrico</a></li>
+                                                                <li><a href="#r">Corte de fibra sin enlace BACKUP</a>
+                                                                </li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-54"><label for="nivel4-54"
+                                                                class="contenedor">Equipos con
+                                                                enlace BACKUP</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Anillados</a></li>
+                                                                <li><a href="#r">Portchanel</a></li>
+                                                                <li><a href="#r">Disable</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-55"><label for="nivel4-55"
+                                                                class="contenedor">Configuracion en
+                                                                STACK</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Problema Electrico</a></li>
+                                                                <li><a href="#r">Corte de fibra</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-56"><label for="nivel4-56"
+                                                                class="contenedor">PE/RO/EQUIPOS
+                                                                BB</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Problema Electrico</a></li>
+                                                                <li><a href="#r">Corte de fibra</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-57"><label for="nivel4-57"
+                                                                class="contenedor">Salidas
+                                                                Internacionales</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Propagacion de los preffijos por
+                                                                        ASN</a>
+                                                                </li>
+                                                                <li><a href="#r">Reporte de MASIVOS</a></li>
+                                                                <li><a href="#r">Proveedor de servicios</a></li>
+                                                                <li><a href="#r">Proveedor de Cable</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">FIBRA</a></li>
+                                                    <li><span name="list" id="nivel4-59"><label for="nivel4-59"
+                                                                class="contenedor">Atenuaciones</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Cambio de interfaz</a></li>
+                                                                <li><a href="#r">Cambio de Hilo</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">Reporte a jefaruta/gerencia</a></li>
+                                                    <li><a href="#r">REPORTAR A RDA</a></li>
+                                                    <li><a href="#r">ROUTER REFLECTOR</a></li>
+                                                    <li><span name="list" id="nivel4-63"><label for="nivel3-63"
+                                                                class="contenedor">Casos POCO
+                                                                COMUNES</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">TRIPLE CORTE</a></li>
+                                                                <li><a href="#r">CAIDA DATACENTER</a></li>
+                                                                <li><a href="#r">PROBLEMA MASIVO DE FORTI</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">PANAMA</a></li>
+                                                    <li><a href="#r">GUATEMALA</a></li>
+                                                    <li><a href="#r">DIAGRAMAS</a></li>
+                                                    <li><span name="list" id="nivel4-67"><label for="nivel4-67"
+                                                                class="contenedor">Equipos de cada
+                                                                zona</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">UIO</a></li>
+                                                                <li><a href="#r">GYE</a></li>
+                                                                <li><a href="#r">MANTA</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><span name="list" id="nivel4-68"><label for="nivel4-68"
+                                                                class="contenedor">Problemas de
+                                                                CPU</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">Flapeo BACKBONE</a></li>
+                                                                <li><a href="#r">FLAPEO CLIENTES</a></li>
+                                                                <li><a href="#r">TORMENTA DE FLOODIN</a></li>
+                                                                <li><a href="#r">FLAPEO DE VLAN</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                    <li><a href="#r">Saturacion de enlaces > 90%</a></li>
+                                                    <li><a href="#r">Degradacion de enlaces</a></li>
+                                                    <li><span name="list" id="nivel4-71"><label for="nivel4-71"
+                                                                class="contenedor">Clientes
+                                                                Especiales</label>
+                                                            <ul class="interior">
+                                                                <li><a href="#r">TV CLABE</a></li>
+                                                                <li><a href="#r">NEDETE</a></li>
+                                                                <li><a href="#r">CNT</a></li>
+                                                                <li><a href="#r">CLARO</a></li>
+                                                                <li><a href="#r">TELXIUS</a></li>
+                                                                <li><a href="#r">CES</a></li>
+                                                                <li><a href="#r">MOVISTAR</a></li>
+                                                            </ul>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div [hidden]="!desarrollo">
+            <ul>
+                <li><span name="list" id="nivel1-4"><label for="nivel1-3" class="contenedor">DESARROLLO</label>
+                        <ul class="interior">
+                            <li><a href="#r">MIGRACION VM</a></li>
+                            <li><a href="#r">Replica de servidores</a></li>
+                            <li><a href="#r">CONTRASEÑAS</a></li>
+                            <li><a href="#r">REQUERIMIENTOS TRAREAS</a></li>
+                        </ul>
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="contenido" class="target">
+        <app-contenido></app-contenido>
+    </div>
+</body>
